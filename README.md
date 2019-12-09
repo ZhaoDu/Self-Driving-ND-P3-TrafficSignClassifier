@@ -47,8 +47,6 @@ As a first step, I decided to convert the images to grayscale because ...
 
 Here is an example of a traffic sign image before and after grayscaling.
 
-![alt text][image]
-
 As a last step, I normalized the image data because ...
 
 I decided to generate additional data because ... 
@@ -94,9 +92,13 @@ To train the model, I tuned the epochs, batch_size and learning rate. Traning ac
 |2019-12-8 |93.4%     |200       |128       |0.001        |449.605      |
 
 Training error:
-![alt text][image3]
+
+<img src="./img/learning_curve_error.png" width = "400" height = "300" div align="center" />
+
+
 Training loss:
-![alt text][image4]
+
+<img src="./img/learning_curve_loss.png" width = "400" height = "300" div align="center" />
 
 ### Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
@@ -181,4 +183,3 @@ For the second image ...
 [image6]: ./img/placeholder.png "Traffic Sign 3"
 [image7]: ./img/placeholder.png "Traffic Sign 4"
 [image8]: ./img/placeholder.png "Traffic Sign 5"
-img\
