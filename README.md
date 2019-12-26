@@ -38,7 +38,8 @@ Most common signs:
 - Keep right train samples: 1860
 
 Here is an visualization of some 8 randomly picked training examples for each class. As can be found, within each class there is a high variability in appearance due to different light conditions, time of the day and image angle.
-![training img][image2]
+
+<img src="./img/random_examples.png" width = "800" height = "4300" div align="left" />
 
 ## Step2: Design, train and test a model architecture
 ### Preprocessed the image data. 
@@ -86,12 +87,12 @@ The parameters(`EPOCHS=500`, `BATCH_SIZE=256`, and `LEARNING RATE=0.001`) result
 
 Training error:
 
-<img src="./img/learning_curve_error.png" width = "600" height = "450" div align="center" />
+<img src="./img/learning_curve_error.png" width = "400" height = "300" div align="center" />
 
 
 Training loss:
 
-<img src="./img/learning_curve_loss.png" width = "600" height = "450" div align="center" />
+<img src="./img/learning_curve_loss.png" width = "400" height = "300" div align="center" />
 
 My final model results were:
 * validation set accuracy of 0.944 
@@ -136,6 +137,7 @@ To investigae how certain the model is when predicting on each of the 20 new ima
 For most of these twenty images, the model is relatively sure about the prediction since the probability of the top one predicted sign is 1. As for `00012.ppm` and `00013.ppm`, the model is still certain about the predictions(with probabilities above 90%).
 
 Top 5 predictions for image: 00000.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |16   |Vehicles over 3.5 metric tons prohibited |1.000000000000 |
@@ -145,6 +147,7 @@ Top 5 predictions for image: 00000.ppm
 |3    |Speed limit (60km/h)                     |0.000000000000 |
 
 Top 5 predictions for image: 00001.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |1    |Speed limit (30km/h)                     |1.000000000000 |
@@ -154,6 +157,7 @@ Top 5 predictions for image: 00001.ppm
 |3    |Speed limit (60km/h)                     |0.000000000000 |
 
 Top 5 predictions for image: 00002.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |38   |Keep right                               |1.000000000000 |
@@ -163,6 +167,7 @@ Top 5 predictions for image: 00002.ppm
 |3    |Speed limit (60km/h)                     |0.000000000000 |
 
 Top 5 predictions for image: 00003.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |33   |Turn right ahead                         |1.000000000000 |
@@ -172,6 +177,7 @@ Top 5 predictions for image: 00003.ppm
 |0    |Speed limit (20km/h)                     |0.000000000000 |
 
 Top 5 predictions for image: 00004.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |11   |Right-of-way at the next intersection    |1.000000000000 |
@@ -181,6 +187,7 @@ Top 5 predictions for image: 00004.ppm
 |21   |Double curve                             |0.000000000000 |
 
 Top 5 predictions for image: 00005.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |38   |Keep right                               |1.000000000000 |
@@ -190,6 +197,7 @@ Top 5 predictions for image: 00005.ppm
 |3    |Speed limit (60km/h)                     |0.000000000000 |
 
 Top 5 predictions for image: 00006.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |18   |General caution                          |1.000000000000 |
@@ -199,6 +207,7 @@ Top 5 predictions for image: 00006.ppm
 |2    |Speed limit (50km/h)                     |0.000000000000 |
 
 Top 5 predictions for image: 00007.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |12   |Priority road                            |1.000000000000 |
@@ -208,6 +217,7 @@ Top 5 predictions for image: 00007.ppm
 |2    |Speed limit (50km/h)                     |0.000000000000 |
 
 Top 5 predictions for image: 00008.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |25   |Road work                                |1.000000000000 |
@@ -217,6 +227,7 @@ Top 5 predictions for image: 00008.ppm
 |3    |Speed limit (60km/h)                     |0.000000000000 |
 
 Top 5 predictions for image: 00009.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |35   |Ahead only                               |1.000000000000 |
@@ -226,6 +237,7 @@ Top 5 predictions for image: 00009.ppm
 |3    |Speed limit (60km/h)                     |0.000000000000| 
 
 Top 5 predictions for image: 00010.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |12   |Priority road                            |1.000000000000 |
@@ -235,6 +247,7 @@ Top 5 predictions for image: 00010.ppm
 |11   |Right-of-way at the next intersection    |0.000000000000| 
 
 Top 5 predictions for image: 00011.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |7    |Speed limit (100km/h)                    |1.000000000000 |
@@ -244,6 +257,7 @@ Top 5 predictions for image: 00011.ppm
 |2    |Speed limit (50km/h)                     |0.000000000000 |
 
 Top 5 predictions for image: 00012.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |23   |Slippery road                            |0.999996900558 |
@@ -253,6 +267,7 @@ Top 5 predictions for image: 00012.ppm
 |31   |Wild animals crossing                    |0.000000000132| 
 
 Top 5 predictions for image: 00013.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |8    |Speed limit (120km/h)                    |0.937708199024 |
@@ -262,6 +277,7 @@ Top 5 predictions for image: 00013.ppm
 |16   |Vehicles over 3.5 metric tons prohibited |0.000002375284| 
 
 Top 5 predictions for image: 00014.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |4    |Speed limit (70km/h)                     |1.000000000000 |
@@ -271,6 +287,7 @@ Top 5 predictions for image: 00014.ppm
 |2    |Speed limit (50km/h)                     |0.000000000000| 
 
 Top 5 predictions for image: 00015.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |9    |No passing                               |1.000000000000 |
@@ -280,6 +297,7 @@ Top 5 predictions for image: 00015.ppm
 |20   |Dangerous curve to the right             |0.000000000000| 
 
 Top 5 predictions for image: 00016.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |21   |Double curve                             |1.000000000000 |
@@ -289,6 +307,7 @@ Top 5 predictions for image: 00016.ppm
 |25   |Road work                                |0.000000000000 |
 
 Top 5 predictions for image: 00017.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |20   |Dangerous curve to the right             |1.000000000000 |
@@ -298,6 +317,7 @@ Top 5 predictions for image: 00017.ppm
 |23   |Slippery road                            |0.000000000000 |
 
 Top 5 predictions for image: 00018.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |27   |Pedestrians                              |1.000000000000| 
@@ -307,6 +327,7 @@ Top 5 predictions for image: 00018.ppm
 |28   |Children crossing                        |0.000000000000 |
 
 Top 5 predictions for image: 00019.ppm
+
 |Label|Sign Name                                |Probability|
 |:----|:--------------------------------------- |:---------|
 |38   |Keep right                               |1.000000000000 |
