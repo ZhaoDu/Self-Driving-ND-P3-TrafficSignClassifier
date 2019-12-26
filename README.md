@@ -38,8 +38,7 @@ Most common signs:
 - Keep right train samples: 1860
 
 Here is an visualization of some 8 randomly picked training examples for each class. As can be found, within each class there is a high variability in appearance due to different light conditions, time of the day and image angle.
-
-<img src="./img/random_examples.png" width = "800" height = "4300" div align="left" />
+![training img][image2]
 
 ## Step2: Design, train and test a model architecture
 ### Preprocessed the image data. 
