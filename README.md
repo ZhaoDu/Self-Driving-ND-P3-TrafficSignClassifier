@@ -339,23 +339,30 @@ Top 5 predictions for image: 00019.ppm
 In this project, the original LeNet was modified to recognize traffic signs. With tuning the traing parameters, a considerable validation accuracy of 0.944 was finally achieved when the bacth sets, epochs, and learning rate were set as 256, 500, and 0.001, respectively. The accuracy of this model on test set is 0.931. Using this model, we predicted 20 extra traffic sing images from [German Traffic Sign Benchmarks Dataset](http://www.baidu.com/link?url=_LMFNS6UTiMI-sz2fH63yhMyaTiegVwVq5N6XWqiNmbej2FGYUnOnrwrjZOXY078&wd=&eqid=f239d477000967ad000000035e048a01). The model was able to correctly guess 19 of the 20 traffic signs, which gives an accuracy of 95%.
 
 ## Step6: (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
+
 `Convolution layer 1`
-![test][image8]
+
+![Convolution layer 1][image8]
 
 `RELU 1`
-![test][image9]
+
+![RELU 1][image9]
 
 `Max pooling 1`
-![test][image10]
+
+![Max pooling 1][image10]
 
 `Convolution layer 2`
-![test][image11]
+
+![Convolution layer 2][image11]
 
 `RELU 2`
-![test][image12]
+
+![RELU 2][image12]
 
 `Max pooling 2`
-![test][image13]
+
+![Max pooling 2][image13]
 
 ## Discussion 
 The approach adopted in current pipeline worked pretty well. However, there are still room for improment on this project. Following aspects can be taken into consideration in near future:
