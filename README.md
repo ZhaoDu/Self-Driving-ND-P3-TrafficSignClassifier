@@ -82,7 +82,7 @@ To train the model, I tuned the epochs, batch_size and learning rate. Traning ac
 |2019-12-26|93.9%     |200       |256       |0.001        |244.398s     |
 |2019-12-26|94.4%     |500       |256       |0.001        |588.761s     |
 
-The parameters(`EPOCHS=500`, `BATCH_SIZE=256`, and `LEARNING RATE=0.001`) resulted in an accuracy of 93.4% on training set was finally selected. The error and loss of this model during the train porcess is shown in following pictures. 
+The parameters(`EPOCHS=500`, `BATCH_SIZE=256`, and `LEARNING RATE=0.001`) resulted in an accuracy of 93.4% on training set were finally selected. The error and loss of this model during the train porcess are shown in following pictures. 
 
 Training error:
 
